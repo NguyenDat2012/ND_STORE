@@ -262,15 +262,3 @@ if (menuToggle && mobileMenu) {
         });
     });
 }
-if (window.innerWidth > 768 && typeof VanillaTilt !== 'undefined') {
-VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
-        max: 20,
-        speed: 300,
-        perspective: 1000,
-        glare: true,
-        "max-glare": 0.3,
-        // Khi bỏ chuột ra, card sẽ chuyển động mượt mà về lại góc nghiêng mặc định ban đầu thay vì phẳng lì
-        reset: true, 
-        transition: true
- });
-}
