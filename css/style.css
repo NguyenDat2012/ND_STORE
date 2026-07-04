@@ -114,8 +114,7 @@ html {
 
 /* Glassmorphism Cards */
 .glass-card {
-    background: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(20px);
+    background:rgba(255,255,255,.7);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 32px 0 rgba(0, 53, 39, 0.05);
@@ -287,21 +286,21 @@ html.dark .grid-bg {
 }
 
 /* --- ANIMATIONS: Nhịp lơ lửng tự động khác nhau tạo độ bay bổng --- */
-.floating-1 { animation: float1 6s ease-in-out infinite; }
-.floating-2 { animation: float2 7s ease-in-out infinite; }
-.floating-3 { animation: float3 5s ease-in-out infinite; }
+.floating-1 { animation: float1 6s ease-in-out infinite; animation-delay: 1s;}
+.floating-2 { animation: float2 7s ease-in-out infinite; animation-delay: 1.2s;}
+.floating-3 { animation: float3 5s ease-in-out infinite; animation-delay: 1.4s;}
 
 @keyframes float1 {
-    0%, 100% { transform: translateY(0) rotate(-6deg); }
-    50% { transform: translateY(-12px) rotate(-4deg); }
+    0%, 100% { transform:translateY(0) rotate(-3deg); }
+    50% { transform:translateY(-6px) rotate(-2deg); }
 }
 @keyframes float2 {
-    0%, 100% { transform: translateY(0) rotate(4deg); }
-    50% { transform: translateY(-15px) rotate(6deg); }
+    0%, 100% { transform:translateY(0) rotate(2deg); }
+    50% {  transform:translateY(-8px) rotate(3deg); }
 }
 @keyframes float3 {
-    0%, 100% { transform: translateY(0) rotate(6deg); }
-    50% { transform: translateY(5px) rotate(2deg); }
+    0%, 100% { transform:translateY(0) rotate(3deg); }
+    50% {  transform:translateY(3px) rotate(1deg); }
 }
 
 
